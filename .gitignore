@@ -1,2 +1,8 @@
-# Include your project-specific ignores in this file
-# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+>>>>>>> f4f087b740db08a61f7cd8b049bc80aa9d1115b5
