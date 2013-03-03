@@ -37,9 +37,9 @@ body {
  Header 
 ***************/
 header {
-  /*  	position: relative; */
-  height: 160px;
-  background-image: url("images/header.jpg");
+  /*  position: relative; */
+  /* 	height: 160px; */
+  /* 	background-image: url("images/header.jpg"); */
   z-index: 100; }
 
 #logo {
@@ -70,29 +70,26 @@ nav, footer {
   clear: both;
   color: #00afac;
   background-color: white;
-  margin: 20px; }
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 nav ul {
   margin: 0px;
   padding: 5px 0px 5px 30px; }
-
 nav li {
   display: inline;
-  /* 	margin-right: 20px; */
-  /* 	margin: 10px; */ }
-
-nav li a {
-  color: #00afac;
-  padding: 16px;
-  border-radius: 10px; }
-
-nav li a:hover {
-  cursor: "https://dl.dropbox.com/u/371737/gt.png";
-  background-color: #8be8e7;
-  color: black; }
-
-nav li a.current {
-  color: black; }
+  /* 		margin-right: 20px; */
+  /* 		margin: 10px; */ }
+  nav li a {
+    color: #00afac;
+    padding: 16px;
+    border-radius: 10px; }
+  nav li a:hover {
+    cursor: "https://dl.dropbox.com/u/371737/gt.png";
+    background-color: #8be8e7;
+    color: black; }
+  nav li a.current {
+    color: black; }
 
 section.courses {
   float: left;

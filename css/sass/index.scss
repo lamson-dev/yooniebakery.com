@@ -48,9 +48,9 @@ body {
  Header 
 ***************/
 header {
-/*  	position: relative; */
-	height: 160px;
-	background-image: url("images/header.jpg");
+/*  position: relative; */
+/* 	height: 160px; */
+/* 	background-image: url("images/header.jpg"); */
 	z-index: 100;}
 #logo { 
 /*   	position: absolute; */
@@ -82,30 +82,39 @@ nav, footer {
 	clear: both;
 	color: $tifblue-dark;
 	background-color: $white;
-	margin: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
-nav ul {
-	margin: 0px;
-	padding: 5px 0px 5px 30px;
+nav {
+	ul {
+		margin: 0px;
+		padding: 5px 0px 5px 30px;
+	}
+	
+	li {
+		display: inline;
+/* 		margin-right: 20px; */
+/* 		margin: 10px; */
+
+		a {
+			color: $tifblue-dark;
+			padding: 16px;
+			border-radius: 10px;
+		}
+		
+		a:hover {
+			cursor: "https://dl.dropbox.com/u/371737/gt.png";
+			background-color: $tifblue-light-less;
+			color: $black;
+			
+		}
+		
+		a.current {
+			color: $black;	
+		}
+	}
 }
-nav li {
-	display: inline;
-/* 	margin-right: 20px; */
-/* 	margin: 10px; */
-}
-nav li a {
-	color: $tifblue-dark;
-	padding: 16px;
-	border-radius: 10px;
-}
-nav li a:hover {
-	cursor: "https://dl.dropbox.com/u/371737/gt.png";
-	background-color: $tifblue-light-less;
-	color: $black;
-}
-nav li a.current {
-	color: $black;
-}
+
 section.courses {
 	float: left;
 	width: 659px;
