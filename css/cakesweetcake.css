@@ -1,0 +1,1377 @@
+body {
+    color: #947057;
+    font-size: 1em;
+    font-family: arial, serif, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background: #f9f7e9 url(/images/page-background.jpg) top center repeat;
+}
+
+/* - */
+
+a {
+    color: #947057;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #547975;
+    text-decoration: underline;
+}
+
+img {
+    border: 0px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.tright {
+    text-align: right;
+}
+
+.tcenter {
+    text-align: center;
+}
+
+.medium {
+    font-size: 1em;
+}
+
+.large {
+    font-size: 1.4em;
+}
+
+img.left {
+    margin-right: 10px;
+}
+
+p {
+    font-size: 1em;
+    margin: 0 0 25px 0;
+    padding: 0px;
+    line-height: 1.4em;
+}
+
+p.intro {
+    font-weight: bold;
+}
+
+p.shallow {
+    margin: 0 0 5px 0;
+}
+
+h1 {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 2.4em;
+    font-weight: normal;
+    font-style: italic;
+    color: #404041;
+    text-transform: none;
+    font-family: arial, sans-serif;
+    position: relative;
+    z-index: 1;
+    text-shadow: #604837 0px 1px 1px;
+}
+
+h2 {
+    margin: 5px 0;
+    padding: 0;
+    font-size: 2.6em;
+    font-weight: normal;
+    color: #947057;
+    text-transform: uppercase;
+    font-style: normal;
+    font-family: arial, sans-serif;
+}
+
+h3 {
+    margin: 5px 0 20px 0;
+    padding: 0;
+    font-size: 1.6em;
+    font-weight: normal;
+    color: #f1a693;
+    text-transform: none;
+    font-style: italic;
+    font-family: arial, sans-serif;
+}
+
+h4 {
+    margin: 5px 0 8px 0;
+    padding: 0;
+    font-size: 1.1em;
+    color: #f1a693;
+    text-transform: none;
+    font-style: italic;
+    font-weight: normal;
+}
+
+h5 {
+    margin: 5px 0 8px 0;
+    padding: 0;
+    font-size: 1.1em;
+    color: #947057;
+    text-transform: none;
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* - CUFON HEADINGS - */
+
+/*
+.cufon-active h1                                            { font-size:4.1em; line-height:0.6em; margin-top:15px; }
+.cufon-active h2                                            { font-size:3.2em; line-height:0.6em; }
+.cufon-active h3                                            { font-size:1.8em; line-height:0.6em; }
+*/
+
+/* - */
+
+.hr {
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    height: 2px;
+    margin: 10px 0 20px 0;
+    padding: 0;
+    background: url(/images/hr.gif) top left repeat-x;
+}
+
+hr {
+    display: none;
+}
+
+/* - */
+
+.col {
+    float: left;
+    overflow: visible;
+    display: block;
+    margin-right: 20px;
+    padding: 0;
+}
+
+.col.last {
+    margin-right: 0px;
+}
+
+.col.c15 {
+    width: 145px;
+}
+
+.col.c20 {
+    width: 180px;
+}
+
+.col.c25 {
+    width: 220px;
+}
+
+.col.c33 {
+    width: 300px;
+}
+
+.col.c40 {
+    width: 370px;
+}
+
+.col.c45 {
+    width: 380px;
+}
+
+.col.c50 {
+    width: 460px;
+}
+
+.col.c66 {
+    width: 620px;
+}
+
+.col.c75 {
+    width: 700px;
+}
+
+.col.c100 {
+    width: 940px;
+}
+
+.col.c50per {
+    width: 48%;
+    float: left;
+}
+
+.col.c50per.last {
+    float: right;
+}
+
+.container {
+    width: 100%;
+    overflow: visible;
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.container.shallow {
+    margin-bottom: 0;
+}
+
+.container.tall {
+    margin: 20px 0;
+}
+
+.col.left {
+    float: left;
+}
+
+.col.right {
+    float: right;
+    text-align: left;
+}
+
+/* - */
+
+.outer-wrapper {
+    float: left;
+    width: 100%;
+    overflow: visible;
+}
+
+.outer-wrapper .inner-wrapper {
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* - */
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+form fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+form fieldset ul,
+.main form fieldset ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    float: left;
+}
+
+form fieldset ul li,
+.main form fieldset ul li {
+    margin: 0;
+    padding: 0 0 10px 0;
+    float: left;
+    width: 100%;
+}
+
+form label {
+    color: #f1a693;
+    margin-bottom: 5px;
+    float: left;
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+form input,
+form textarea {
+    padding: 0 10px;
+    color: #947057;
+    float: left;
+    width: 220px;
+    background: url(/images/footer-field-bg.jpg) top left repeat;
+    border: 1px solid #e4e1cf;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    line-height: 35px;
+    height: 35px;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+}
+
+form textarea {
+    height: 235px;
+    line-height: 1.1em;
+    padding: 10px;
+}
+
+form input.focused,
+form textarea.focused {
+    padding: 0 9px;
+    background: none;
+    background-color: #fff;
+    border: 2px solid #9cd5ce;
+    height: 33px;
+    line-height: 33px;
+}
+
+form textarea.focused {
+    height: 235px;
+    padding: 9px;
+    line-height: 1.1em;
+}
+
+form button {
+    border: 0;
+    background: transparent;
+    width: 206px;
+    height: 34px;
+    display: block;
+    float: left;
+    background: url(/images/contact-form-button.png) top left no-repeat;
+    font-weight: normal;
+    line-height: 28px;
+    font-size: 1em;
+    text-shadow: #7abcb3 0px 1px 0px;
+    color: #fff;
+}
+
+form button:hover {
+    background-position: bottom left;
+    cursor: pointer;
+}
+
+/* - */
+
+.header {
+    background: url(/images/header-bg.jpg) bottom center repeat-x;
+    padding: 3px 0 0px 0;
+}
+
+.header .top {
+    float: left;
+    overflow: hidden;
+    width: 100%;
+}
+
+.header .lower {
+    margin-top: -3px;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.header .top ul {
+    margin: 10px 0 0 0;
+    padding: 0;
+    float: right;
+    list-style: none;
+}
+
+.header .top ul li {
+    margin: 0 12px 0 0;
+    padding: 0 0 0 14px;
+    float: left;
+    background: url(/images/header-ul-bg.jpg) 0px 2px no-repeat;
+}
+
+.header .top ul li.first {
+    background: none;
+    padding-left: 0;
+}
+
+.header .top ul li a {
+    color: #547975;
+    text-decoration: none;
+    font-size: 1.05em;
+    padding-bottom: 6px;
+    float: left;
+    text-shadow: #fff 0px 1px 1px;
+}
+
+.header .top ul li a.active,
+.header .top ul li a:hover {
+    color: #547975;
+    text-decoration: none;
+    background: url(/images/header-top-selected-bg.gif) bottom center repeat-x;
+}
+
+.header .lower ul {
+    margin: 12px 0 0 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    width: 100%;
+}
+
+.header .lower ul li {
+    margin: 0 40px 0 0;
+    padding: 0;
+    float: left;
+}
+
+.cufon-active .header .lower ul li {
+    margin-right: 34px;
+}
+
+.header .lower ul li.last {
+    margin-right: 0;
+    float: right;
+}
+
+.header .lower ul li a {
+    color: #547975;
+    text-decoration: none;
+    padding-bottom: 8px;
+    float: left;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.cufon-active .header .lower ul li a {
+    font-size: 21px;
+}
+
+.header .lower ul li a.active,
+.header .lower ul li a:hover {
+    color: #547975;
+    text-decoration: none;
+    background: url(/images/header-top-selected-bg.gif) bottom center repeat-x;
+}
+
+.header .logo {
+    margin: 0;
+    padding: 0;
+}
+
+.header .logo a {
+    display: block;
+    float: left;
+    width: 374px;
+    height: 59px;
+    background: url(/images/cake-sweet-cake-logo.png) top left no-repeat;
+}
+
+.header .logo a:hover {
+    background-position: bottom left;
+}
+
+.header .logo a span {
+    display: none;
+}
+
+.header .lower .social {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    height: 52px;
+    width: 274px;
+    background: url(/images/header-social-bg.png) top left no-repeat;
+}
+
+.header .lower .social a {
+    margin-left: 4px;
+    float: right;
+    display: block;
+    margin-top: 4px;
+    width: 39px;
+    height: 39px;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.header .lower .social a:hover {
+    background-position: bottom left;
+}
+
+.header .lower .social a span {
+    display: none;
+}
+
+.header .lower .social a.twitter {
+    background-image: url(/images/header-twitter.png);
+}
+
+.header .lower .social a.facebook {
+    background-image: url(/images/header-facebook.png);
+}
+
+.header .nolead {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+
+.header .lead {
+    height: 375px;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    background: url(/photos/home-wedding-cake.png) bottom right no-repeat;
+    margin-bottom: 41px;
+    margin-top: 25px;
+}
+
+.header .lead h1 {
+    color: #fff;
+    margin-top: 0;
+}
+
+.header .lead h1 span.tiny {
+    font-size: 0.7em;
+}
+
+.header .lead h1 span.medium {
+    font-size: 1em;
+}
+
+.header .lead h1 span.huge {
+    font-size: 1.7em;
+}
+
+/* - */
+
+.ribbon {
+    background: url(/images/ribbon.png) top center no-repeat;
+    height: 88px;
+    text-align: center;
+    padding-top: 6px;
+    margin-top: -44px;
+}
+
+.ribbon.lead {
+    background-image: url(/images/ribbon-small.png);
+    height: 65px;
+    padding-top: 3px;
+}
+
+.ribbon h1 {
+    color: #fbf9eb;
+}
+
+.ribbon.lead h1 {
+    font-size: 1.6em;
+}
+
+.ribbon h1 span {
+    padding: 0 0 0 49px;
+    background: url(/images/ribbon-heart-left.png) left center no-repeat;
+}
+
+.ribbon h1 span span {
+    padding: 0 49px 0 0;
+    background: url(/images/ribbon-heart-right.png) right center no-repeat;
+}
+
+.ribbon .stamp {
+    position: absolute;
+    top: -35px;
+    right: 50px;
+    float: left;
+    display: block;
+    height: 123px;
+    width: 123px;
+    background: url(/images/ribbon-stamp.png) top left no-repeat;
+    z-index: 3;
+}
+
+.ribbon .stamp:hover {
+    background-position: bottom left;
+}
+
+.ribbon .stamp span {
+    display: none;
+}
+
+.ribbon .lead-stamp {
+    position: absolute;
+    top: -193px;
+    right: 30px;
+    float: left;
+    display: block;
+    height: 218px;
+    width: 218px;
+    background: url(/images/ribbon-lead-stamp.png) top left no-repeat;
+    z-index: 3;
+}
+
+.ribbon .lead-stamp:hover {
+    background-position: bottom left;
+}
+
+.ribbon .lead-stamp span {
+    display: none;
+}
+
+/* - */
+
+.ctas {
+    background: url(/images/ctas-bg.jpg) top center repeat-x;
+    padding: 0 0 20px 0;
+    margin: 20px 0 0 0;
+}
+
+.ctas-inner {
+    background: url(/images/ctas-main.png) top center no-repeat;
+    height: 252px;
+    padding: 20px 0;
+    float: left;
+    width: 100%;
+    overflow: visible;
+}
+
+.ctas .col {
+    text-align: center;
+}
+
+.ctas p {
+    margin: 10px 0 0px 0;
+}
+
+.ctas h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.8em;
+}
+
+.ctas h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.ctas a.button {
+    text-shadow: #7abcb3 0px 1px 0px;
+    background: url(/images/cta-button.jpg) top left no-repeat;
+    padding: 0;
+    color: #fff;
+    float: left;
+    line-height: 31px;
+    display: block;
+    width: 185px;
+    height: 33px;
+    margin-left: 57px;
+    text-align: center;
+}
+
+.ctas a.button:hover {
+    background-position: bottom left;
+    text-decoration: none;
+}
+
+/* - */
+
+.footer {
+    background: url(/images/footer-bg.jpg) top center repeat-x;
+    padding: 25px 0 20px 0;
+}
+
+.footer h3 {
+    color: #9cd5ce;
+    text-shadow: #6d523f 0px 1px 1px;
+}
+
+.footer p {
+    color: #fbf9eb;
+    padding-right: 30px;
+}
+
+.footer .enquiry-form {
+    width: 401px;
+    height: 230px;
+    padding: 20px 30px;
+    float: left;
+    overflow: visible;
+    background: url(/images/footer-enquiry-form.jpg) top left no-repeat;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.footer .enquiry-form ul {
+    width: 100%;
+    float: left;
+    overflow: visible;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .enquiry-form ul li {
+    float: left;
+    width: 188px;
+    padding: 0;
+    margin: 0 10px 10px 0;
+}
+
+.footer .enquiry-form ul li.right {
+    float: right;
+    margin-right: 0;
+}
+
+.footer .enquiry-form ul li label {
+    color: #f1a693;
+}
+
+.footer .enquiry-form ul li input,
+.footer .enquiry-form ul li textarea {
+    padding: 0 10px;
+    color: #947057;
+    float: left;
+    width: 166px;
+    background: url(/images/footer-field-bg.jpg) top left repeat;
+    border: 1px solid #e4e1cf;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    line-height: 35px;
+    height: 35px;
+}
+
+.footer .enquiry-form ul li textarea {
+    height: 155px;
+    line-height: 1.1em;
+    padding: 10px;
+}
+
+.footer .enquiry-form ul li input.focused,
+.footer .enquiry-form ul li textarea.focused {
+    width: 166px;
+    padding: 0 9px;
+    background: none;
+    background-color: #fff;
+    border: 2px solid #9cd5ce;
+    height: 33px;
+    line-height: 33px;
+}
+
+.footer .enquiry-form ul li textarea.focused {
+    height: 155px;
+    padding: 9px;
+    line-height: 1.1em;
+}
+
+.footer .enquiry-form button {
+    width: 206px;
+    height: 34px;
+    display: block;
+    float: left;
+    background: url(/images/footer-enquiry-form-button.png) top left no-repeat;
+    font-weight: normal;
+    line-height: 30px;
+    font-size: 1em;
+    text-shadow: #7abcb3 0px 1px 0px;
+    position: absolute;
+    bottom: -11px;
+    left: 50%;
+    margin-left: -103px;
+}
+
+.footer .enquiry-form button:hover {
+    background-position: bottom left;
+    cursor: pointer;
+}
+
+/* - */
+
+.sub-footer {
+    background: url(/images/sub-footer-bg.jpg) top center repeat-x;
+    padding: 20px 0;
+}
+
+.sub-footer h3 {
+    color: #9cd5ce;
+    text-shadow: #6d523f 0px 1px 1px;
+    margin: 10px 0 10px 0;
+}
+
+.sub-footer p {
+    color: #fbf9eb;
+    margin: 0px;
+}
+
+.sub-footer a {
+    color: #fbf9eb;
+    text-decoration: none;
+}
+
+.sub-footer a:hover {
+    color: #fbf9eb;
+    text-decoration: underline;
+}
+
+.sub-footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sub-footer ul li {
+    margin: 0 0 2px 0;
+    padding: 0;
+}
+
+.sub-footer .social {
+    float: left;
+    height: 51px;
+    width: 90%;
+}
+
+.sub-footer .social a {
+    margin-left: 4px;
+    float: right;
+    display: block;
+    margin-top: 4px;
+    width: 39px;
+    height: 39px;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.sub-footer .social a:hover {
+    background-position: bottom left;
+}
+
+.sub-footer .social a span {
+    display: none;
+}
+
+.sub-footer .social a.twitter {
+    background-image: url(/images/header-twitter.png);
+}
+
+.sub-footer .social a.facebook {
+    background-image: url(/images/header-facebook.png);
+}
+
+.sub-footer .social-bg {
+    background: url(/images/sub-footer-follow.png) 100px 50px no-repeat;
+}
+
+.sub-footer .hr {
+    background-image: url(/images/footer-hr.gif);
+    margin-top: 20px;
+}
+
+/* - */
+
+.main {
+    margin: 20px 0 0 0;
+}
+
+.main h1 {
+    color: #f1a693;
+    margin: 0 0 30px 0;
+}
+
+.main ul {
+    padding: 0 0 0 20px;
+}
+
+.main ul.sitemap {
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+    font-size: 1.1em;
+}
+
+.main ul li {
+    margin: 0 0 5px 0;
+}
+
+.main ul.sitemap li a {
+    text-decoration: underline;
+}
+
+.main a.button {
+    text-shadow: #589d95 0px 1px 0px;
+    background: url(/images/button.png) top left no-repeat;
+    padding: 0;
+    color: #fff;
+    float: left;
+    line-height: 33px;
+    display: block;
+    width: 135px;
+    height: 33px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.main a.button:hover {
+    background-position: bottom left;
+    text-decoration: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main a.button.med {
+    text-shadow: #589d95 0px 1px 0px;
+    background: url(/images/button-med.png) top left no-repeat;
+    padding: 0;
+    color: #fff;
+    float: left;
+    line-height: 33px;
+    display: block;
+    width: 187px;
+    height: 33px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.main a.button.med:hover {
+    background-position: bottom left;
+    text-decoration: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main a.button.wide {
+    text-shadow: #589d95 0px 1px 0px;
+    background: url(/images/button-wide.png) top left no-repeat;
+    padding: 0;
+    color: #fff;
+    float: left;
+    line-height: 33px;
+    display: block;
+    width: 206px;
+    height: 33px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.main a.button.wide:hover {
+    background-position: bottom left;
+    text-decoration: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main a.button.red {
+    text-shadow: #c3604e 0px 1px 0px;
+    background: url(/images/button-red.jpg) top left no-repeat;
+    padding: 0;
+    color: #fff;
+    float: left;
+    line-height: 31px;
+    display: block;
+    width: 199px;
+    height: 33px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.main a.button.red:hover {
+    background-position: bottom left;
+    text-decoration: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main a.button.huge {
+    text-shadow: #589d95 0px 1px 0px;
+    background: url(/images/button-huge.jpg) top left no-repeat;
+    padding: 0;
+    color: #fff;
+    float: left;
+    line-height: 53px;
+    display: block;
+    width: 336px;
+    height: 58px;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.main a.button.huge:hover {
+    background-position: bottom left;
+    text-decoration: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main a.button.huge.centered {
+    float: left;
+    margin-left: 305px;
+}
+
+.main a.button.red.centered {
+    float: left;
+    margin-left: 375px;
+}
+
+img.thumb, a.thumb img {
+    background: url(/images/thumb-bg.jpg) top left no-repeat;
+    padding: 12px 15px 15px 12px;
+}
+
+/* - */
+
+#home_slider {
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#home_slider li {
+    float: left;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 20px 0 0;
+    width: 220px;
+    text-align: center;
+}
+
+#home_slider li h4 {
+}
+
+#home_slider li a.button {
+    margin-left: 43px;
+}
+
+.bx_wrap {
+    float: left;
+    overflow: visible;
+    width: 100%;
+    position: relative;
+}
+
+.bx_wrap .prev {
+    display: block;
+    float: left;
+    position: absolute;
+    left: -23px;
+    top: 55px;
+    width: 54px;
+    height: 54px;
+    z-index: 5000;
+    text-indent: -50000px;
+    background: url(/images/slider-left.png) top left no-repeat;
+}
+
+.bx_wrap .next {
+    display: block;
+    float: left;
+    position: absolute;
+    right: -23px;
+    top: 55px;
+    width: 54px;
+    height: 54px;
+    z-index: 5000;
+    text-indent: -50000px;
+    background: url(/images/slider-right.png) top left no-repeat;
+}
+
+.bx_wrap .prev:hover,
+.bx_wrap .next:hover {
+    background-position: bottom left;
+}
+
+/* - */
+
+.main .contact-form {
+    width: 240px;
+    height: 570px;
+    padding: 10px 30px 20px 30px;
+    float: left;
+    overflow: visible;
+    background: url(/images/contact-form-bg.jpg) top left no-repeat;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.main .contact-form button {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    margin-left: -103px;
+}
+
+.main .contact-form h3 {
+    margin-bottom: 10px;
+}
+
+/* - */
+
+.main a {
+    color: #947057;
+    text-decoration: underline;
+}
+
+.main a:hover {
+    color: #947057;
+    text-decoration: none;
+}
+
+/* - */
+
+.main .gmap-container {
+    width: 276px;
+    height: 338px;
+    background: url(/images/gmap-background.jpg) top left no-repeat;
+    padding: 12px 12px 15px 12px;
+}
+
+.main .gmap-container #gmap {
+    width: 276px;
+    height: 338px;
+}
+
+/* - */
+
+.main .contact-details {
+    background: url(/images/contact-follow.jpg) center bottom no-repeat;
+}
+
+.main .social {
+    float: left;
+    height: 51px;
+    width: 100%;
+    margin-top: -10px;
+    margin-bottom: 6px;
+}
+
+.main .social a {
+    margin-left: 4px;
+    float: left;
+    display: block;
+    margin-top: 4px;
+    width: 39px;
+    height: 39px;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.main .social a:hover {
+    background-position: bottom left;
+}
+
+.main .social a span {
+    display: none;
+}
+
+.main .social a.twitter {
+    background-image: url(/images/header-twitter.png);
+}
+
+.main .social a.facebook {
+    background-image: url(/images/header-facebook.png);
+}
+
+/* - */
+
+.main .about-us-area {
+    position: relative;
+    padding: 50px 80px 0 80px;
+    height: 476px;
+    margin-bottom: 20px;
+    background: url(/images/about-us-bg.jpg) top left no-repeat;
+}
+
+.main .about-us-area .large-thumb {
+    background: url(/images/thumb-bg-large.png) top left no-repeat;
+    padding: 13px;
+    position: absolute;
+    top: 40px;
+    left: -240px;
+}
+
+/* - */
+
+.partners {
+    width: 100%;
+    float: left;
+    overflow: visible;
+}
+
+.partners .partner {
+    float: left;
+    width: 100%;
+    overflow: visible;
+    margin: 0 0 20px 0;
+    padding: 0 0 2px 0;
+    background: url(/images/partner-hr.jpg) left bottom no-repeat;
+}
+
+.partners .partner-thumb {
+    width: 240px;
+    float: left;
+    overflow: visible;
+}
+
+.partners .partner-desc {
+    width: 370px;
+    float: left;
+    overflow: visible;
+}
+
+.partners .partner-desc h3 {
+    margin: 0 0 5px 0;
+}
+
+.partners .partner-contact {
+    padding: 20px 0 10px 0;
+    background: url(/images/partner-contact-info.jpg) top left no-repeat;
+    width: 300px;
+    float: right;
+    overflow: visible;
+}
+
+.partners .partner-contact h4 {
+    margin: 0 0 5px 0;
+}
+
+.partners .partner-contact p {
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+}
+
+/* - */
+
+.main .menu-container {
+    padding: 0;
+    margin: 0 0 20px 0;
+    background: url(/images/menu-bg.jpg) top left repeat-y;
+    float: left;
+    overflow: hidden;
+    width: 940px;
+}
+
+.main .menu-container .menu-top {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    background: url(/images/menu-top.jpg) top left no-repeat;
+    padding-top: 40px;
+}
+
+.main .menu-container .menu-bot {
+    width: 850px;
+    float: left;
+    overflow: hidden;
+    background: url(/images/menu-bot.jpg) bottom left no-repeat;
+    padding: 0 50px 40px 50px;
+}
+
+.main .menu-container .col.c33 {
+    width: 250px;
+    padding: 0 10px;
+}
+
+/* - */
+
+.main .portion-table {
+    float: left;
+    width: 100%;
+    overflow: visible;
+    background: url(/images/portion-table-bg.jpg) top left no-repeat;
+    height: 426px;
+    position: relative;
+}
+
+.main .portion-table .info {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px 0 0 0;
+    height: 151px;
+}
+
+.main .portion-table ul.split {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    line-height: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main .portion-table ul.split li {
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    line-height: 37px;
+    height: 37px;
+    color: #947057;
+    background: url(/images/portion-sep.jpg) bottom left repeat-x;
+    margin: 0;
+    padding: 0;
+}
+
+.main .portion-table ul.split li.first {
+    background: none;
+    color: #fff;
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+.main .portion-table a.button {
+    position: absolute;
+    bottom: -10px;
+    left: 16px;
+}
+
+/* - */
+
+.main a.gallery-image {
+    float: left;
+    display: block;
+    width: 196px;
+    height: 196px;
+    position: relative;
+    overflow: visible;
+    margin: 0px 20px 20px 0;
+    background: url(/images/gallery-thumb-bg.jpg) top left no-repeat;
+    padding: 12px 12px 14px 12px;
+}
+
+.main .col.c75 a.gallery-image.third {
+    margin-right: 0px;
+}
+
+.main .col.c100 a.gallery-image.fourth {
+    margin-right: 0px;
+}
+
+.main a.gallery-image span.expand-icon {
+    display: block;
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    top: -10px;
+    right: -10px;
+    background: url(/images/gallery-thumb-icon.png) top left no-repeat;
+}
+
+.main a.gallery-image:hover span.expand-icon {
+    background-position: bottom left;
+}
+
+/* - */
+
+.main ul.error_list {
+    margin: 3px 0 0 0;
+    padding: 0;
+    float: right;
+    width: 60%;
+    font-size: 0.7em;
+    color: #ff0000;
+}
+
+.main ul.error_list li {
+    margin: 0;
+    padding: 0;
+}
+
+/* - */

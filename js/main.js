@@ -3,15 +3,40 @@
 var numImgs = 17;
 var rootImgUrl = "https://googledrive.com/host/0B-OfZfUc6qp6NFBJT0cwdWw1ZEk/images/";
 var rootThumbUrl = "https://googledrive.com/host/0B-OfZfUc6qp6NFBJT0cwdWw1ZEk/thumbnails/";
-var infoFileUrl = "https://googledrive.com/host/0B-OfZfUc6qp6NFBJT0cwdWw1ZEk/yoonie-info.txt"
+var infoFileUrl = "https://googledrive.com/host/0B-OfZfUc6qp6NFBJT0cwdWw1ZEk/info.txt";
+/* var infoFileUrl = "http://www.yooniebakery.com/yoonie-info.jsonp"; */
 
 $(document).ready(function() {
+
 /*
-	$.get(infoFileUrl, function(data) {
-	   alert(data.return);
+	$.ajax({
+		type: "GET",
+		crossDomain: "true",
+		url: infoFileUrl,
+		dataType: 'json',
+		success: function(json){
+			alert(json);
+		},
+		error: function(){
+			alert("Error");
+		},
+	});
+*/
+
+/*	$.get(infoFileUrl, function(data) {
+		
+		alert(data);
+
+		var lines = data.val().split('\n');
+		alert(line[0]);
+		alert(line[1]);
+		for(var i = 0; i < lines.length; i++) {
+			//code here using lines[i] which will give you each line
+		}
+	   
 	   //process text file line by line
-	   $('#div').html(data.replace('\n','<br>'));
-	}, "jsonp");
+ 	   $('#div').html(data.replace('\n','<br>'));
+	});
 */
 	
 	var main = $('#main');
