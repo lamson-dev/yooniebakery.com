@@ -454,11 +454,12 @@ form button:hover {
     float: left;
     width: 374px;
     height: 59px;
-    background: url(/images/cake-sweet-cake-logo.png) top left no-repeat;
+    /*background: url(/images/cake-sweet-cake-logo.png) top left no-repeat;*/
+    background: url(/images/logo.png) top left no-repeat;
 }
 
 .header .logo a:hover {
-    background-position: bottom left;
+    /*background-position: bottom left;*/
 }
 
 .header .logo a span {
@@ -513,7 +514,7 @@ form button:hover {
     width: 100%;
     float: left;
     overflow: hidden;
-    background: url(/photos/home-wedding-cake.png) bottom right no-repeat;
+    background: url(/images/home-wedding-cake.png) bottom right no-repeat;
     margin-bottom: 41px;
     margin-top: 25px;
 }
