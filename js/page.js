@@ -1,12 +1,10 @@
 /* javascript for yoonie bakery site */
 
 var numImgs = 0;
-var rootUrl = "https://googledrive.com/host/0B-OfZfUc6qp6NFBJT0cwdWw1ZEk/";
-var rootImgUrl = "https://googledrive.com/host/0B-OfZfUc6qp6NFBJT0cwdWw1ZEk/birthday-cakes/";
-var rootThumbUrl = "https://googledrive.com/host/0B-OfZfUc6qp6NFBJT0cwdWw1ZEk/birthday-cakes/thumbnails/";
-var infoFileUrl = "http://www.yooniebakery.com/yoonie-info.json";
-
-var chop = "http://www.yooniebakery.com/";
+var infoFileUrl = "http://www.yooniebakery.com/admin/info.json";
+var rootUrl = "https://googledrive.com/host/0B3WChHj3XJ_GM1JQZzgyUkpTY28/";
+var rootImgUrl = '';
+var rootThumbUrl = '';
 
 $(document).ready(function () {
     $('input, textarea').bind('focus', function () {
@@ -20,28 +18,28 @@ $(document).ready(function () {
 //    $('a.lbox, a.cbox').lightBox();
 
 
-    infoFileUrl = document.URL + "info.txt";
-    rootImgUrl = rootUrl + document.URL.replace(chop, "");
+//    infoFileUrl = document.URL + "info.txt";
+
+    var chop = "http://www.yooniebakery.com/";
+    var current = document.URL.replace(chop, "");
+
+    rootImgUrl = rootUrl + current;
     rootThumbUrl = rootImgUrl + "thumbnails/";
 
+    $.getJSON(infoFileUrl,function (json) {
 
-    $.get(infoFileUrl, function (data) {
+        for (var key in json) {
+            if ((key+'/') == current) {
+                numImgs = json[key].count;
+                addImages();
+                addEffects();
+                break;
+            }
+        }
 
-//        var lines = data.val().split('\n');
-//		alert(lines[0]);
-//		alert(line[1]);
-//        for (var i = 0; i < lines.length; i++) {
-//            code here using lines[i] which will give you each line
-//        }
-//
-//        process text file line by line
-// 	   $('#div').html(data.replace('\n','<br>'));
-
-        numImgs = data;
-        addImages();
-        addEffects();
-
-    });
+    }).fail(function () {
+            alert("FAIL!");
+        });
 
 });
 
@@ -49,7 +47,7 @@ function addImages() {
     var main = $('#gallery');
     var imgTag = $('<img>');
     var aTag = $('<a>');
-    for (var i = 1; i <= numImgs; i++) {
+    for (var i = numImgs; i >= 1; i--) {
         var a = aTag.clone();
         var img = imgTag.clone();
 
