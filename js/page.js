@@ -47,15 +47,21 @@ function addImages() {
     var main = $('#gallery');
     var imgTag = $('<img>');
     var aTag = $('<a>');
+
+    var count = 0;
     for (var i = numImgs; i >= 1; i--) {
+        count ++;
         var a = aTag.clone();
         var img = imgTag.clone();
 
         a.addClass("fancybox");
         a.addClass("gallery-image cbox");
 
-        if (i % 3 == 0)
+        if (count == 3) {
             a.addClass("third");
+            count = 0;
+        }
+
 
         a.attr("href", rootImgUrl + "img" + i + ".jpg");
         a.attr("rel", "lightbox");

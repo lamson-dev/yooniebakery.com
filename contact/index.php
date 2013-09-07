@@ -1,32 +1,80 @@
-<html>
-<body>
+<?php
+
+if (isset($_POST['email'])) {
+
+    // EDIT THE 2 LINES BELOW AS REQUIRED
+    $email_to = "yoongduong@gmail.com";
+    $email_cc = "dan.deo.nguyen@gmail.com";
+    $email_subject = "[Yoonie Bakery] New Inquiry!";
+
+
+    function died($error)
+    {
+        // your error code can go here
+        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "These errors appear below.<br /><br />";
+        echo $error . "<br /><br />";
+        echo "Please go back and fix these errors.<br /><br />";
+        die();
+    }
+
+    // validation expected data exists
+    if (!isset($_POST['name']) ||
+        !isset($_POST['number']) ||
+        !isset($_POST['email']) ||
+        !isset($_POST['message'])
+    ) {
+        died('We are sorry, but there appears to be a problem with the form you submitted.');
+    }
+
+    $name = $_POST['name']; // required
+    $number = $_POST['number']; // required
+    $email_from = $_POST['email']; // required
+    $message = $_POST['message']; // required
+
+    $error_message = "";
+    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+    if (!preg_match($email_exp, $email_from)) {
+        $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+    }
+    $string_exp = "/^[A-Za-z .'-]+$/";
+    if (!preg_match($string_exp, $name)) {
+        $error_message .= 'The Name you entered does not appear to be valid.<br />';
+    }
+    if (strlen($message) < 2) {
+        $error_message .= 'The message you entered do not appear to be valid.<br />';
+    }
+    if (strlen($error_message) > 0) {
+        died($error_message);
+    }
+    $email_message = "Form details below.\n\n";
+
+    function clean_string($string)
+    {
+        $bad = array("content-type", "bcc:", "to:", "cc:", "href");
+        return str_replace($bad, "", $string);
+    }
+
+    $email_message .= "Name: " . clean_string($name) . "\n";
+    $email_message .= "Number: " . clean_string($number) . "\n";
+    $email_message .= "Email: " . clean_string($email_from) . "\n";
+    $email_message .= "Message: " . clean_string($message) . "\n";
+
+
+    // create email headers
+    $headers = 'From: ' . $email_from . "\r\n" .
+        'Cc: ' . $email_cc . "\r\n" .
+        'Reply-To: ' . $email_from . "\r\n" .
+        'X-Mailer: PHP/' . phpversion();
+    @mail($email_to, $email_subject, $email_message, $headers);
+    ?>
+
+    <!-- include your own success html here -->
+
+    <strong>Thank you for contacting us. We will be in touch with you very soon :)</strong>
+
+    <a href="/">Go back to the Home Page</a>
 
 <?php
-if (isset($_REQUEST['email']))
-//if "email" is filled out, send email
-  {
-  //send email
-  $email = $_REQUEST['email'] ;
-  $subject = $_REQUEST['subject'] ;
-  $message = $_REQUEST['message'] ;
-  mail("someone@example.com", $subject,
-  $message, "From:" . $email);
-  echo "Thank you for using our mail form";
-  }
-else
-//if "email" is not filled out, display the form
-  {
-  echo "<form method='post' action='mailform.php'>
-  Email: <input name='email' type='text'><br>
-  Subject: <input name='subject' type='text'><br>
-  Message:<br>
-  <textarea name='message' rows='15' cols='40'>
-  </textarea><br>
-  <input type='submit'>
-  </form>";
-  echo $_REQUEST;
-  }
+}
 ?>
-
-</body>
-</html>
